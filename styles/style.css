@@ -68,7 +68,7 @@ input[type="text"]:focus {
 }
 
 .btn-img {
-  background: url(./ico/download.svg) no-repeat scroll 7px 7px;
+  background: url(../ico/download.svg) no-repeat scroll 7px 7px;
   background-position: center;
 }
 
@@ -153,7 +153,7 @@ input[type="checkbox"]:focus {
 
 @media (max-width: 768px) {
   .card-content {
-    background-image: url(./img/1366_2000.jpg) !important;
+    background-image: url(../img/1366_2000.jpg) !important;
     color: #f1f2f8 !important;
     filter: grayscale(100%);
   }
@@ -175,7 +175,7 @@ input[type="checkbox"]:focus {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-image: url(./ico/account_circle_FILL1_wght400_GRAD200_opsz24.svg) ;
+  background-image: url(../ico/account_circle_FILL1_wght400_GRAD200_opsz24.svg) ;
 }
 
 .btn a{
@@ -213,10 +213,10 @@ input[type="checkbox"]:focus {
 }
 /* CSS DEL EJERCICIO 1 DE LA UD 1 */
 
-/* 
+
 *{
   outline: 1px red solid;
-} */
+} 
 
 
 @keyframes fadeIn {  
@@ -228,3 +228,4 @@ input[type="checkbox"]:focus {
       opacity:1;  
   }  
 }
+
