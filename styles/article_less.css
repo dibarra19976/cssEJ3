@@ -70,3 +70,12 @@ body {
   font-family: "Gabarito", sans-serif;
   color: #92499c;
 }
+.content .favorite-section {
+  background-color: #bfbfbf;
+}
+.content .favorite-section::selection {
+  background-color: #e3cbe7;
+}
+.content .favorite-section::-moz-selection {
+  background-color: #e3cbe7;
+}

@@ -6,6 +6,8 @@
 @accent: #92499c;
 @link: #356aa7;
 @link-hover: #bfdcfd;
+@fav-section: rgb(191, 191, 191);
+
 //FONTS
 @font-main: "Gabarito", sans-serif;
 @font-text: "Lato", sans-serif;
@@ -13,7 +15,7 @@
 //OTHER PROPERTIES
 @margin: 10px;
 @transition-time: 0.2s;
-
+@font-size: 12pt;
 //BODY
 body {
   background-color: @background;
@@ -34,12 +36,12 @@ body {
       }
       p {
         font-family: @font-main !important;
-        font-size: 15pt;
+        font-size: @font-size + 3pt;
       }
     }
     .user {
       font-family: @font-main;
-      font-size: 16pt;
+      font-size: @font-size + 4pt;
       .user-link {
         text-decoration: none;
       }
@@ -60,7 +62,7 @@ body {
       margin-inline: @margin;
     }
     p {
-      font-size: 13pt;
+      font-size: @font-size + 1pt;
       .section-selector;
       .article-link {
         .section-selector;
@@ -85,5 +87,10 @@ body {
   h4 {
     font-family: @font-main;
     color: @accent;
+  }
+
+  .favorite-section{
+    background-color: @fav-section;
+    .section-selector;
   }
 }

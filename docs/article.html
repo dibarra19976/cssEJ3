@@ -10,10 +10,10 @@
     <!-- ORIGINAL CSS (Edited a bit to use SASS and LESS with some components) -->
     <link rel="stylesheet" href="../styles/style.css" />
     <!-- LESS CSS -->
-    <link rel="stylesheet" href="../styles/article_less.css" />
+    <!-- <link rel="stylesheet" href="../styles/article_less.css" /> -->
     <!-- SASS CSS -->
-    <!-- <link rel="stylesheet" href="../styles/style.css" /> -->
-    <!-- SASS and LESS files are interchangable -->
+    <link rel="stylesheet" href="../styles/article_sass.css" />
+    <!-- SASS and LESS files are interchangable and contain the same styles in their respective formats -->
   </head>
   <body>
     <div class="container-fluid bg-primary sticky-top mb-4">
@@ -155,6 +155,9 @@
       <div class="container w-100">
         <div class="d-flex article-header">
           <h1 class="">Article Title</h1>
+          <h4 class="align-self-end">#tag1 #tag2</h4>
+        </div>
+        <div class="d-flex article-header">
           <div class="d-flex align-self-end">
             <p class="user">
               by
@@ -180,12 +183,9 @@
             <p>13123131</p>
           </div>
         </div>
-        <h4>#tag1 #tag2</h4>
         <div class="article-content col">
           <div class="clearfix">
-            <figure
-              class="col-md-4 rounded float-sm-start img-fluid"
-            >
+            <figure class="col-md-4 rounded float-sm-start img-fluid">
               <img
                 src="../img/1366_2000.jpg"
                 class="figure-img img-fluid rounded"
@@ -209,22 +209,24 @@
               ipsum dolor sit amet consectetur adipisicing elit. Delectus,
               ipsam! Dolores quidem molestiae dolorum quasi, ullam, quaerat
               expedita non magnam blanditiis, suscipit harum nulla. Assumenda
-              eum recusandae laudantium aliquid nam!
-              <a href="" class="article-link">Lorem ipsum dolor sit.</a>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-              ipsam! Dolores quidem molestiae dolorum quasi, ullam, quaerat
-              expedita non magnam blanditiis, suscipit harum nulla. Assumenda
-              eum recusandae laudantium aliquid nam!
-              <a href="" class="article-link">Lorem ipsum dolor sit.</a> Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-              ipsam! Dolores quidem molestiae dolorum quasi, ullam, quaerat
-              expedita non magnam blanditiis, suscipit harum nulla. Assumenda
-              eum recusandae laudantium aliquid nam!
-              <a href="" class="article-link">Lorem ipsum dolor sit.</a> Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-              ipsam! Dolores quidem molestiae dolorum quasi, ullam, quaerat
-              expedita non magnam blanditiis, suscipit harum nulla. Assumenda
-              eum recusandae laudantium aliquid nam!
+              <span class="favorite-section">
+                eum recusandae laudantium aliquid nam!
+                <a href="" class="article-link">Lorem ipsum dolor sit.</a>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus, ipsam! Dolores quidem molestiae dolorum quasi, ullam,
+                quaerat expedita non magnam blanditiis, suscipit harum nulla.
+                Assumenda eum recusandae laudantium aliquid nam!
+                <a href="" class="article-link">Lorem ipsum dolor sit.</a> Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+                ipsam! Dolores quidem molestiae dolorum quasi, ullam, quaerat
+                expedita non magnam blanditiis, suscipit harum nulla. Assumenda
+                eum recusandae laudantium aliquid nam!
+                <a href="" class="article-link">Lorem ipsum dolor sit.</a> Lorem
+                ipsum dolor sit amet consectetur a </span
+              >dipisicing elit. Delectus, ipsam! Dolores quidem molestiae
+              dolorum quasi, ullam, quaerat expedita non magnam blanditiis,
+              suscipit harum nulla. Assumenda eum recusandae laudantium aliquid
+              nam!
               <a href="" class="article-link">Lorem ipsum dolor sit.</a>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
               ipsam! Dolores quidem molestiae dolorum quasi, ullam, quaerat
@@ -242,9 +244,7 @@
               eum recusandae laudantium aliquid nam!
               <a href="" class="article-link">Lorem ipsum dolor sit.</a>
             </p>
-            <figure
-              class="col-md-4 rounded float-sm-end img-fluid"
-            >
+            <figure class="col-md-4 rounded float-sm-end img-fluid">
               <img
                 src="../img/1366_2000.jpg"
                 class="figure-img img-fluid rounded"
