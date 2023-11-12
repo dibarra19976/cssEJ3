@@ -1,0 +1,89 @@
+//COLORS
+@background: #f1f2f8;
+@primary: #563c80;
+@secondary: #e3cbe7;
+@secondary-lighter: #f1e5f3;
+@accent: #92499c;
+@link: #356aa7;
+@link-hover: #bfdcfd;
+//FONTS
+@font-main: "Gabarito", sans-serif;
+@font-text: "Lato", sans-serif;
+
+//OTHER PROPERTIES
+@margin: 10px;
+@transition-time: 0.2s;
+
+//BODY
+body {
+  background-color: @background;
+}
+
+//ARTICLE
+.content {
+  .article-header {
+    h1 {
+      font-family: @font-main;
+      font-weight: 700;
+      margin-right: @margin;
+    }
+    .icons {
+      div {
+        margin-right: @margin;
+        margin-left: @margin;
+      }
+      p {
+        font-family: @font-main !important;
+        font-size: 15pt;
+      }
+    }
+    .user {
+      font-family: @font-main;
+      font-size: 16pt;
+      .user-link {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .user-link {
+    color: @primary;
+    transition: @transition-time;
+    &:hover {
+      color: @accent;
+    }
+  }
+
+  .article-content {
+    font-family: @font-text;
+    figure {
+      margin-inline: @margin;
+    }
+    p {
+      font-size: 13pt;
+      .section-selector;
+      .article-link {
+        .section-selector;
+        .user-link;
+        color: @link;
+        &:hover {
+          color: @link-hover;
+        }
+        
+      }
+    }
+  }
+
+  .section-selector{
+    &::selection {
+        background-color: @secondary;
+      }
+      &::-moz-selection {
+        background-color: @secondary;
+      }
+  }
+  h4 {
+    font-family: @font-main;
+    color: @accent;
+  }
+}

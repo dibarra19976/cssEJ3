@@ -1,13 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900");
-
-.bg-primary {
+/* .bg-primary {
   background-color: #563c80 !important;
-}
+} */
 
-.bg-secondary {
-  background-color: #e3cbe7 !important;
-}
 
 .navb {
   color: #f1f2f8;
@@ -86,14 +82,10 @@ input[type="text"]:focus {
     contrast(104%);
 }
 
-p {
+/* p {
   font-family: "Lato", sans-serif !important;
   color: #080911 !important;
-}
-
-body {
-  background-color: #f1f2f8 !important;
-}
+} */
 
 .dropdown-menu {
   font-family: "Gabarito", sans-serif !important;
@@ -188,24 +180,6 @@ input[type="checkbox"]:focus {
   color: #70727c !important;
 
 }
-.btn-register{
-  background-color: #e3cbe7 !important;
-
-}
-
-.btn-register a{
-  color: #70727c !important;
-
-}
-
-.btn-register:hover {
-  background-color: #92499c !important;
-}
-
-
-.btn-register:hover a{
-  color: #f1f2f8 !important;
-}
 
 .content{
   animation: fadeIn 0.5s ; 
@@ -213,10 +187,6 @@ input[type="checkbox"]:focus {
 }
 /* CSS DEL EJERCICIO 1 DE LA UD 1 */
 
-
-*{
-  outline: 1px red solid;
-} 
 
 
 @keyframes fadeIn {  

@@ -1,0 +1,13 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$primary: #563c80 ; 
+$secondary: #e3cbe7 ;
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "danger": $danger
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+ 
