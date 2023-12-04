@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home - Penscape</title>
+    <title>User List</title>
     <link rel="icon" type="image/x-icon" href="/ico/icon.ico?" />
     <!-- CUSTOM BOOTSTRAP -->
     <link rel="stylesheet" href="../styles/bootstrap/custom.css" />
@@ -14,6 +14,7 @@
     <!-- SASS CSS -->
     <link rel="stylesheet" href="../styles/article_sass.css" />
     <!-- SASS and LESS files are interchangable and contain the same styles in their respective formats -->
+    <link rel="stylesheet" href="../styles/user-list.css" />
   </head>
   <body>
     <header class="container-fluid bg-primary sticky-top mb-4">
@@ -32,28 +33,27 @@
               <li class="mx-3">Favourites</li>
               <li class="mx-3" id="loginbtn">
                 <button class="btn">
-                  <a href="./docs/login.html">Log In</a>
+                  <a href="./login.html">Log In</a>
                 </button>
               </li>
               <li class="mx-3" id="registerbtn">
                 <button class="btn btn-register">
-                  <a href="./docs/register.html">Register</a>
+                  <a href="./register.html">Register</a>
                 </button>
               </li>
               <li class="mx-3 d-none" id="logoutbtn">
                 <button class="btn btn-register">
-                  <a href="./docs/register.html">Log Out</a>
+                  <a href="./register.html">Log Out</a>
                 </button>
               </li>
-
               <li class="mx-3 d-none d-flex align-items-center" id="profile">
                 <img
-                src=""
-                alt=""
-                class="logo h-100 d-sm-none d-md-block d-none d-sm-block"
-                id="profilePicTop"
-              />
-              <p style="padding-left: 20px;" id="username"></p>
+                  src="../img/icon.svg"
+                  alt=""
+                  class="logo h-100 d-sm-none d-md-block d-none d-sm-block"
+                  id="profilePicTop"
+                />
+                <p style="padding-left: 20px" id="username"></p>
               </li>
             </ul>
           </div>
@@ -172,82 +172,40 @@
       </div>
     </header>
 
-    <div class="container-fluid content w-100 position-relative mb-5 content">
-      <div class="container w-100 article-card my-3">
-        <div class="row g-2">
-          <div class="col-4 h-100 d-sm-none d-md-block d-none d-sm-block">
-            <img src="./img/16-9.png" alt="" class="img-fluid" />
-          </div>
+    <main class="container-fluid content w-100 position-relative mb-5 content">
+      <div class="container w-100">
+        <div class="d-flex article-header">
+          <h1 class="">Users</h1>
+        </div>
+        <div class="user-list w-100">
+          <ul class="w-100 " id="user-list-div">
+            <!-- <li class="w-100">
+              <div class="d-flex align-items-center user-div">
+                <div style="height: 100px; margin: 20px">
+                  <img src="../img/pink.png" class="h-100" />
+                </div>
+                <div class="d-flex flex-column user-info p-3">
+                  <h4>User</h4>
+                  <div class="d-flex flex-row">
+                    <div class="d-flex flex-column user-info p-3">
+                      <p>Display Name: <span></span></p>
+                      <p>Email: <span>email</span></p>
+                      <p>Date of birth: <span>email</span></p>
+                    </div>
 
-          <div class="col h-100 position-relative">
-            <div class="card-content p-2">
-              <h1>
-                <a class="link" href="./docs/article.html">Article title</a>
-              </h1>
-              <p class="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                quibusdam sint reiciendis atque similique consequuntur sed ad,
-                temporibus iste laborum, voluptas facere, officiis harum vitae!
-                Sed repudiandae reiciendis cumque quis.
-              </p>
-              <h5>#tag1, #tag2</h5>
-            </div>
-            <div class="continue w-100 p-1 m-0">Continue reading</div>
-            <div class="position-absolute profile-pic"></div>
-          </div>
+                    <div class="d-flex flex-column user-info p-3">
+                      <p>Phone Number: <span>email</span></p>
+                      <p>Profile Picture src: <span></span></p>
+                      <p>Admin: <span>No</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li> -->
+          </ul>
         </div>
       </div>
-
-      <div class="container w-100 article-card my-3">
-        <div class="row g-2">
-          <div class="col-4 h-100 d-sm-none d-md-block d-none d-sm-block">
-            <img src="./img/16-9.png" alt="" class="img-fluid" />
-          </div>
-
-          <div class="col h-100 position-relative">
-            <div class="card-content p-2">
-              <h1>
-                <a class="link" href="./docs/article.html">Article title</a>
-              </h1>
-              <p class="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                quibusdam sint reiciendis atque similique consequuntur sed ad,
-                temporibus iste laborum, voluptas facere, officiis harum vitae!
-                Sed repudiandae reiciendis cumque quis.
-              </p>
-              <h5>#tag1, #tag2</h5>
-            </div>
-            <div class="continue w-100 p-1 m-0">Continue reading</div>
-            <div class="position-absolute profile-pic"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container w-100 article-card my-3">
-        <div class="row g-2">
-          <div class="col-4 h-100 d-sm-none d-md-block d-none d-sm-block">
-            <img src="./img/16-9.png" alt="" class="img-fluid" />
-          </div>
-
-          <div class="col h-100 position-relative">
-            <div class="card-content p-2">
-              <h1>
-                <a class="link" href="./docs/article.html">Article title</a>
-              </h1>
-              <p class="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                quibusdam sint reiciendis atque similique consequuntur sed ad,
-                temporibus iste laborum, voluptas facere, officiis harum vitae!
-                Sed repudiandae reiciendis cumque quis.
-              </p>
-              <h5>#tag1, #tag2</h5>
-            </div>
-            <div class="continue w-100 p-1 m-0">Continue reading</div>
-            <div class="position-absolute profile-pic"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </main>
 
     <div
       class="container-fluid bg-primary fixed-bottom d-block d-sm-block d-md-none mt-5"
@@ -255,16 +213,15 @@
       <div class="container text-center" style="height: 60px">
         <div class="row align-items-center navb h-100">
           <div class="col h-75">
-            <a href="#"
-              ><img
-                src="./ico/home_FILL1_wght400_GRAD200_opsz24.svg"
-                alt=""
-                class="h-100 filter-secondary"
-            /></a>
+            <img
+              src="../ico/home_FILL1_wght400_GRAD200_opsz24.svg"
+              alt=""
+              class="h-100 filter-secondary"
+            />
           </div>
           <div class="col h-75">
             <img
-              src="./ico/bookmarks_FILL1_wght400_GRAD200_opsz24.svg"
+              src="../ico/bookmarks_FILL1_wght400_GRAD200_opsz24.svg"
               alt=""
               class="h-100 filter-secondary"
             />
@@ -280,13 +237,16 @@
         </div>
       </div>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="./node_modules/crypto-js/crypto-js.js"></script>
-    <script src="./scripts/indexDBUsers.js"></script>
+    <script src="../node_modules/crypto-js/crypto-js.js"></script>
+    <script src="../scripts/indexDBUsers.js"></script>
+    <script src="../scripts/userlist.js"></script>
     <script src="../scripts/navbar.js"></script>
+
   </body>
 </html>

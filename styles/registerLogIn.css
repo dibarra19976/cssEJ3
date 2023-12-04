@@ -31,6 +31,7 @@
 
 .register-form label {
   font-weight: 500 !important;
+  z-index: 0;
 }
 
 .back-button {
@@ -135,9 +136,6 @@ input:focus {
 }
 
 @media (max-width: 768px) {
-  .register-fields {
-    background-color: #f1f2f884 !important;
-  }
 
   .bg-primary-transparent {
     background-color: #563c80b9 !important;
@@ -145,12 +143,30 @@ input:focus {
   }
 }
 
+.register-select{
+  z-index: 200;
+  background-color: black;
+  opacity: 70%;
+}
+
 @keyframes spin {
   from {
-    transform: rotate3d(1, 1, 1, 0deg) scale(1.1);
+    transform: rotate3d(0, 1, 0, 0deg) scale(1.1);
   }
 
   to {
-    transform: rotate3d(1, 1, 1, 100011deg)  scale(1.1);
+    transform: rotate3d(0, 1, 0, 180deg)  scale(1.1);
   }
+}
+
+#close{
+  font-size: 100pt !important;
+}
+.form-field{
+  margin-bottom: 20px !important;
+}
+.form-field > .form-text{
+  position: absolute !important;
+  font-size: 12pt;
+  font-weight: 900;
 }

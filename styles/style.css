@@ -31,9 +31,7 @@ li {
   transition: 0.1s !important;
 }
 
-li:hover {
-  color: #e3cbe7;
-}
+
 
 .transparent-input {
   background-color: rgba(0, 0, 0, 0) !important;
@@ -199,3 +197,38 @@ input[type="checkbox"]:focus {
   }  
 }
 
+
+.btn-register{
+  background-color: #e3cbe7 !important;
+
+}
+
+.btn-register a{
+  color: #70727c !important;
+
+}
+
+.btn-register:hover {
+  background-color: #92499c !important;
+}
+
+
+.btn-register:hover a{
+  color: #f1f2f8 !important;
+}
+
+.link{
+  color: #080911;
+  text-decoration: none;
+}
+
+.link-navbar{
+  transition: 0.1s !important;
+  color:#f1f2f8;
+  text-decoration: none ;
+  
+}
+
+.link-navbar:hover {
+  color: #e3cbe7;
+}
